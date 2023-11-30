@@ -2,6 +2,7 @@ import React from "react";
 import { FaPhp } from "react-icons/fa6";
 import { TbBrandNextjs } from "react-icons/tb";
 import { LuGraduationCap } from "react-icons/lu";
+import StorePNG from "@/public/store.png"
 import CrwnClothingPNG from "@/public/Crwn-Clothing.png"
 import AdminCMSPNG from "@/public/Admin-CMS.png";
 import EbankingPNG from "@/public/Ebanking.png";
@@ -81,7 +82,7 @@ export const projectsData = [
     description:
       "Creation  of an online store featuring a simple and professional user interface. Experience functionalities like online payment, product presentation categorized by type, and filters for easily viewing preferred products.",
     tags: ["React", "TypeScript", "Next.js", "Tailwind"],
-    imageUrl: AdminCMSPNG,
+    imageUrl: StorePNG,
     url:'https://store-cms.vercel.app/'
   },
   {
