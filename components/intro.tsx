@@ -92,8 +92,8 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none  hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="./Abderrahim-khalidi-1.pdf"
-          download
+          href="https://drive.google.com/file/d/1MSzPottFB_xxBK2jwcoUBpy1hR1QkykL/view"
+          target="_blank"
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
