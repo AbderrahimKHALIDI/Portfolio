@@ -7,7 +7,7 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiDownload } from "react-icons/hi";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import React from "react"
+import React from "react";
 import { useSectionInView } from "@/lib/hooks";
 
 import { motion } from "framer-motion";
@@ -92,7 +92,7 @@ export default function Intro() {
 
         <a
           className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none  hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-          href="https://drive.google.com/file/d/1MSzPottFB_xxBK2jwcoUBpy1hR1QkykL/view"
+          href="https://drive.google.com/file/d/1MXTPYxFy2ha181ClA7QnFOttTpsJVTIH/view?usp=sharing"
           target="_blank"
         >
           Download CV{" "}
