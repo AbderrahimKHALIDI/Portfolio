@@ -23,6 +23,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
+      <head>
+        <Script
+          id="HotjarAnalytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: ` (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3809371,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`,
+          }}
+        />
+      </head>
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 relative pt-28
       sm:pt-36 dark:bg-gray-900 dark:text-gray-50 dark:text-opacity-90`}
@@ -39,20 +55,6 @@ export default function RootLayout({
             <ThemeSwitch />
           </ActiveSectionContextProvider>
         </ThemeContextProvider>
-        <Script
-          id="HotjarAnalytics"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: ` (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:3809371,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`,
-          }}
-        />
       </body>
     </html>
   );
