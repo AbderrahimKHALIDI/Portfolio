@@ -63,11 +63,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hi, I'm Abderrahim,</span> a computer
-        engineering student at EMSI with{" "}
-        <span className="font-bold">2 years</span> of internship experience in{" "}
-        <span className="underline">React (Next.js)</span> and{" "}
-        <span className="underline">Spring</span>.
+        <span className="font-bold">Hi, I'm Abderrahim,</span> a software engineer specialized in full-stack development with <span className="font-bold">PHP</span> (<span className="underline">Symfony</span>), <span className="font-bold">Java</span> (<span className="underline">Spring</span>), and <span className="font-bold">JavaScript</span> (<span className="underline">Angular</span> & <span className="underline">React</span>).
       </motion.h1>
 
       <motion.div
@@ -80,18 +76,31 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none  hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="group relative inline-flex items-center justify-between overflow-hidden rounded-full border border-black/10 bg-white/5 py-3 pl-6 pr-3 backdrop-blur-sm transition-all"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          <span className="z-10 text-black transition-colors duration-300 group-hover:text-white relative">
+            Let's Connect
+          </span>
+          <div className="absolute right-3 w-8 h-8 rounded-full bg-black transition-all duration-300 ease-out group-hover:w-[101%] group-hover:h-full group-hover:right-0">
+          </div>
+          <div className="relative z-10 ml-2 flex h-8 w-8 items-center justify-center rounded-full bg-black overflow-hidden">
+            <BsArrowRight 
+              className="text-white absolute transition-all duration-300 translate-x-0 group-hover:translate-x-[150%] group-hover:opacity-0" 
+              size={20} 
+            />
+            <BsArrowRight 
+              className="text-white absolute -translate-x-[150%] opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" 
+              size={20} 
+            />
+          </div>
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none  hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none  hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://drive.google.com/file/d/1MXTPYxFy2ha181ClA7QnFOttTpsJVTIH/view?usp=sharing"
           target="_blank"
         >

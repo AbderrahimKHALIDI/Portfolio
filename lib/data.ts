@@ -1,5 +1,5 @@
 import React from "react";
-import { FaPhp } from "react-icons/fa6";
+import { FaPhp,FaServer } from "react-icons/fa6";
 import { TbBrandNextjs } from "react-icons/tb";
 import { LuGraduationCap } from "react-icons/lu";
 import StorePNG from "@/public/store.png"
@@ -36,9 +36,18 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Moroccan School of Engineering Sciences ·",
-    location: "Casablanca",
-    description: "Software Engineering Diploma",
+    title: "Software Engineer",
+    location: "Whiti Courtage, full-time",
+    description:
+  "I took part in launching the CRM project from the ground up at Whiti Courtage, contributing to its architecture design and development. The application, built for high performance, is used by multiple departments across the company. My role included both backend and frontend development, as well as deployment and server management.",
+
+    icon: React.createElement(FaServer), // ou un autre icône pertinent (comme FaCogs ou MdEngineering)
+    date: "2024 - Present",
+  },
+  {
+    title: "Software Engineering Diploma",
+    location: "Moroccan School of Engineering Sciences · Casablanca",
+    description: "Earned my engineering diploma in software engineering.",
     icon: React.createElement(LuGraduationCap),
     date: "2024",
   },
@@ -46,7 +55,7 @@ export const experiencesData = [
     title: "Front-End Developer",
     location: "Digimperial, internship",
     description:
-      "I work as a Front-End Developer, and I developed a platform for personnel, file, and client management for a law firm using Next.js, MUI, React, and TypeScript.",
+      "I worked as a Front-End Developer, and I developed a platform for personnel, file, and client management for a law firm using Next.js, MUI, React, and TypeScript.",
     icon: React.createElement(TbBrandNextjs),
     date: "2023",
   },
@@ -54,11 +63,12 @@ export const experiencesData = [
     title: "Back-End Developer",
     location: "WorkShore, internship",
     description:
-      "Developed the Login and Client Management Modules for an integrated enterprise management web application using PHP and MySQL",
+      "Developed the Login and Client Management Modules for an integrated enterprise management web application using PHP and MySQL.",
     icon: React.createElement(FaPhp),
     date: "2022",
   },
 ] as const;
+
 
 export const projectsData = [
   {
@@ -104,25 +114,26 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
   "JavaScript",
   "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
+  "Angular",
+"Tailwind",
+"Scrum",
+
   "Git",
-  "Tailwind",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "REST API",
-  "JAVA",
-  "Spring",
+  "Linux",
+  "Docker",
+  "CI/CD Pipeline",
+  "Script PHP",
+  "Azure",
+  "OVHCloud",
+  "JAVA(Spring)",
+  "PHP(Symfony)",
   "PostgreSQL",
-  "PHP",
-  "Python",
-  "Django",
-  "Material UI",
+  "MySql",
+  "Api Platform",
+  "Brevo mailing",
   "Framer Motion",
 ] as const;

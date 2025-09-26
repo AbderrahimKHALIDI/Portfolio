@@ -20,11 +20,8 @@ export default function About() {
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         I am Abderrahim Khalidi, a{" "}
-        <span className="font-medium">software engineer</span>, passionate about
-        crafting professional experiences. Currently, I work as a{" "}
-        <span className="font-medium"> freelancer on various platforms</span>{" "}
-        while pursuing my journey towards. the title of engineer through my
-        studies at an engineering school.
+      
+        <span className="font-medium">software engineer</span> graduated from an <span className="font-medium">engineering school</span>, passionate about crafting professional experiences. I currently {" "} <span className="font-medium">work</span> as a <span className="font-medium">Systems Engineer</span> at a company while also continuing <span className="font-medium"> freelance work </span> on various platforms.
       </p>
 
       <p className="mb-3">
@@ -38,13 +35,13 @@ export default function About() {
         commitment to creating a positive impact, I dedicate myself to
         delivering outstanding software solutions that exceed expectations and
         provide real value to users. Presently, I am actively seeking
-        opportunities to
+        opportunities to{" "}
         <span className="font-medium">
           collaborate with like-minded individuals,
-        </span>
-        eager to share
+        </span>{" "}
+        eager to share{" "}
         <span className="font-medium">
-          professional experiences and contribute
+        professional experiences and contribute
         </span>{" "}
         to generating a significant impact on society and people's lives.
       </p>
